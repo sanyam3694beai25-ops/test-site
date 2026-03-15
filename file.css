@@ -1,0 +1,739 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+/* Top announcement bar */
+.top-bar {
+  background: #fdf6f0;
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  color: #c9976a;
+  border-bottom: 1px solid #e8d5c4;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e8d5c4;
+  height: 70px;
+  padding: 0 30px;
+}
+
+/* Logo */
+.logo {
+  background: #e8a598;
+  color: white;
+  font-size: 28px;
+  font-style: italic;
+  padding: 0 25px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: -30px;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #b87a55;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: #c9976a;
+}
+
+/* Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-search,
+.btn-order {
+  border: 1.5px solid #e8a598;
+  border-radius: 30px;
+  padding: 7px 18px;
+  background: white;
+  color: #e8a598;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-search:hover,
+.btn-order:hover {
+  background: #e8a598;
+  color: white;
+}
+
+/* Slider wrapper */
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* All slides in a row */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Single slide */
+.slide {
+  min-width: 95%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.slide-1 { background-color: #f5e6d3; }
+.slide-2 { background-color: #fde8e0; }
+.slide-3 { background-color: #e8f0e0; }
+
+/* Image */
+.slide img {
+  width: 55%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Text side */
+.slide-text {
+  width: 38%;
+  text-align: center;
+  color: #5a2d0c;
+}
+
+.slide-text h1 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.slide-text p {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #8b5e3c;
+  margin-bottom: 22px;
+}
+
+/* Button */
+.slide-text button {
+  border: 2.5px solid #5a2d0c;
+  border-radius: 50px;
+  padding: 11px 32px;
+  background: white;
+  color: #5a2d0c;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.slide-text button:hover {
+  background: #5a2d0c;
+  color: white;
+}
+
+/* Dots */
+.dots {
+  text-align: center;
+  padding: 12px 0;
+  background: #f5e6d3;
+}
+
+.dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #c9a890;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dots button.active {
+  background: #5a2d0c;
+}
+
+/* ── About Section ── */
+.about {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+/* ── Top Heading ── */
+.top-text h1 {
+  font-size: 36px;
+  color: #b8860b;
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.divider {
+  color: #c9976a;
+  font-size: 12px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.top-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+/* ── Three Column Layout ── */
+.three-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* ── Left and Right Columns ── */
+.left-col,
+.right-col {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ── Each Feature Block ── */
+.feature h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b8860b;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Left column text aligned right */
+.left-col .feature {
+  text-align: right;
+}
+
+/* Right column text aligned left */
+.right-col .feature {
+  text-align: left;
+}
+
+/* ── Center Image ── */
+.center-img {
+  width: 36%;
+}
+
+.center-img img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ── Products Section ── */
+.products {
+  padding: 50px 40px;
+  text-align: center;
+  background: #fdf0f0;
+}
+
+.heading h1 {
+  font-size: 34px;
+  color: #b8860b;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.card {
+  text-decoration: none;
+  width: 22%;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.04);
+}
+
+.card p {
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #b8860b;
+}
+
+/* ── Hidden Cards (shown after clicking View More) ── */
+.card.hidden {
+  display: none;
+}
+
+/* ── View More Button ── */
+.view-more-wrap {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-view-more {
+  border: 2px solid #a8c5b8;
+  border-radius: 50px;
+  padding: 12px 40px;
+  background: white;
+  color: #7aaa97;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-view-more:hover {
+  background: #a8c5b8;
+  color: white;
+}
+
+/* Hamper Section */
+.hamper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: white;
+}
+
+/* Left Text */
+.hamper-text {
+  width: 40%;
+}
+
+.hamper-text h1 {
+  font-size: 32px;
+  color: #b8860b;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.divider {
+  color: #a8c5b8;
+  font-size: 12px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.hamper-text p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Know More Button */
+.btn-know {
+  border: 2px solid #a8c5b8;
+  border-radius: 50px;
+  padding: 12px 30px;
+  background: white;
+  color: #7aaa97;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-know:hover {
+  background: #a8c5b8;
+  color: white;
+}
+
+/* Right Image */
+.hamper-img {
+  width: 50%;
+}
+
+.hamper-img img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ── Best Sellers Section ── */
+.bestsellers {
+  background: #e0f5ee;
+  padding: 50px 40px 60px;
+  text-align: center;
+}
+
+/* ── Heading ── */
+.heading h1 {
+  font-size: 36px;
+  color: #b8860b;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.divider {
+  color: #a8c5b8;
+  font-size: 14px;
+  letter-spacing: 8px;
+  margin-bottom: 30px;
+}
+
+/* ── White Card Box ── */
+.card-box {
+  background: white;
+  border-radius: 16px;
+  padding: 35px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Grid Layout ── */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* ── Each Item ── */
+.item {
+  width: 22%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* ── Image ── */
+.item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Product Name ── */
+.item p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b8860b;
+  letter-spacing: 0.5px;
+}
+
+/* ── Shared Heading ── */
+.heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.heading h1 {
+  font-size: 36px;
+  color: #b8860b;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.divider {
+  color: #c9976a;
+  font-size: 12px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+
+.heading p {
+  font-size: 15px;
+  color: #777;
+}
+
+/* ════════════════════════
+   FIND US SECTION
+════════════════════════ */
+.findus {
+  background: #fdf6f0;
+  padding: 60px 40px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.search-bar input {
+  width: 320px;
+  padding: 11px 18px;
+  border: 1.5px solid #e8a598;
+  border-radius: 30px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 11px 22px;
+  background: #e8a598;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #c9976a;
+}
+
+/* Location Cards */
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.loc-card {
+  background: white;
+  border-radius: 12px;
+  padding: 28px 24px;
+  width: 28%;
+  text-align: left;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+  border-top: 4px solid #e8a598;
+  transition: transform 0.3s ease;
+}
+
+.loc-card:hover {
+  transform: translateY(-6px);
+}
+
+.loc-icon {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.loc-card h3 {
+  font-size: 18px;
+  color: #5a2d0c;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.loc-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.loc-card .hours,
+.loc-card .phone {
+  color: #888;
+  font-size: 13px;
+}
+
+.map-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 20px;
+  border: 1.5px solid #e8a598;
+  border-radius: 30px;
+  color: #e8a598;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.map-btn:hover {
+  background: #e8a598;
+  color: white;
+}
+
+/* ════════════════════════
+   CONTACT US SECTION
+════════════════════════ */
+.contactus {
+  background: #fff8f4;
+  padding: 60px 40px;
+}
+
+/* Two Column Layout */
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Left Info Column ── */
+.contact-info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: white;
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  border-left: 4px solid #e8a598;
+}
+
+.info-card span {
+  font-size: 24px;
+}
+
+.info-card h4 {
+  font-size: 14px;
+  color: #b8860b;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.info-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 9px 18px;
+  border: 1.5px solid #e8a598;
+  border-radius: 30px;
+  color: #e8a598;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.social-links a:hover {
+  background: #e8a598;
+  color: white;
+}
+
+/* ── Right Form Column ── */
+.contact-form {
+  width: 45%;
+  background: white;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.08);
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  color: #b8860b;
+  font-style: italic;
+  margin-bottom: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1.5px solid #e8d5c4;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #e8a598;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* Send Button */
+.send-btn {
+  width: 100%;
+  padding: 13px;
+  background: #e8a598;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.send-btn:hover {
+  background: #c9976a;
+}
