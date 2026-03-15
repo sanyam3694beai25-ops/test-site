@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fdf0f0;
+}
+
+.menu-page {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: #b8860b;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1.5px solid #b8860b;
+  padding: 7px 18px;
+  border-radius: 30px;
+  float: left;
+  transition: background 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+  background: #b8860b;
+  color: white;
+}
+
+/* Heading */
+.menu-page h1 {
+  font-size: 32px;
+  color: #b8860b;
+  font-style: italic;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.divider {
+  color: #c9976a;
+  font-size: 12px;
+  letter-spacing: 6px;
+  margin-bottom: 35px;
+}
+
+/* Items Grid */
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Each Item Card */
+.item {
+  background: white;
+  border-radius: 10px;
+  width: 28%;
+  padding-bottom: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item h3 {
+  font-size: 16px;
+  color: #5a2d0c;
+  margin: 14px 12px 6px;
+}
+
+.item p {
+  font-size: 13px;
+  color: #888;
+  margin: 0 12px 10px;
+}
+
+.item span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #b8860b;
+}
